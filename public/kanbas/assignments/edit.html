@@ -1,0 +1,187 @@
+<body>
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom meetings</a></li>
+                        <li><a href="assignments.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <select id="select-one-genre">
+                        <option value="SpeedGrader">SpeedGrader</option>
+                    </select>
+                    <hr />
+                    <h3>Assignment Names</h3>
+                    <input
+                        id="Assignment Names"
+                        value="A1 - ENV + HTML"
+                    /><br />
+                    <textarea id="Assignment Description">
+This is the assignment description
+                    </textarea
+                    ><br /><br />
+                    <label for="Points">Points</label><br />
+                    <input name="Points" id="Points" value="100" /><br /><br />
+                    <label for="Assignment Group">Assignment Group</label><br />
+                    <select id="select-one-genre" name="Assignment Group">
+                        <option value="ASSIGNMENTS">ASSIGNMENTS</option></select
+                    ><br /><br />
+                    <label for="Display Grade as">Display Grade as</label><br />
+                    <select id="select-one-genre" name="Display Grade as">
+                        <option value="Percentage">Percentage</option></select
+                    ><br /><br />
+                    <label for="Submission Type">Submission Type</label><br />
+                    <select id="select-one-genre" name="Submission Type">
+                        <option value="Online">Online</option></select
+                    ><br /><br />
+                    <label>Online Entry Options</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        value="Text Entry"
+                        name="check-entry"
+                        id="Text Entry"
+                    />
+                    <label for="chkbox-Text Entry">Text Entry</label> <br />
+                    <input
+                        type="checkbox"
+                        value="Website URL"
+                        name="check-entry"
+                        id="Website URL"
+                    />
+                    <label for="chkbox-Website URL">Website URL</label> <br />
+                    <input
+                        type="checkbox"
+                        value="Media Recordings"
+                        name="check-entry"
+                        id="Media Recordings"
+                    />
+                    <label for="chkbox-Media Recordings"
+                        >Media Recordings</label
+                    >
+                    <br />
+                    <input
+                        type="checkbox"
+                        value="Student Annotation"
+                        name="check-entry"
+                        id="Student Annotation"
+                    />
+                    <label for="chkbox-Student Annotation"
+                        >Student Annotation</label
+                    >
+                    <br />
+                    <input
+                        type="checkbox"
+                        value="File Uploads"
+                        name="check-entry"
+                        id="File Uploads"
+                    />
+                    <label for="chkbox-File Uploads">File Uploads</label>
+                    <br /><br />
+                    <label for="Submission Attempts">Submission Attempts</label
+                    ><br />
+                    <select id="select-one-genre" name="Submission Attempts">
+                        <option value="Unlimited">Unlimited</option></select
+                    ><br /><br />
+                    <label for="Plagiarism Review">Plagiarism Review</label
+                    ><br />
+                    <select id="select-one-genre" name="Plagiarism Review">
+                        <option value="None">None</option></select
+                    ><br /><br />
+                    <label for="Group Assignment">Group Assignment</label><br />
+                    <input
+                        type="checkbox"
+                        value="Group Assignment"
+                        name="check-Group Assignment"
+                        id="Group Assignment"
+                    />
+                    <label for="chkbox-Group Assignment"
+                        >This is a group assignment</label
+                    >
+                    <br /><br />
+                    <label for="Peer Reviews">Peer Reviews</label><br />
+                    <input
+                        type="checkbox"
+                        value="Peer Reviews"
+                        name="check-Peer Reviews"
+                        id="Peer Reviews"
+                    />
+                    <label for="chkbox-Peer Reviews"
+                        >Require Peer Reviews</label
+                    >
+                    <br /><br />
+                    <!-- Todo -->
+                    Assign<br />
+                    <label for="Assign to">Assign to</label><br />
+                    <input
+                        name="Assign to"
+                        id="Assign to"
+                        value="Everyone"
+                    /><br /><br />
+                    <label for="Due">Due</label><br />
+                    <input type="date" value="Due" name="date-Due" id="Due" />
+                    <br /><br />
+                    <label for="Available From">Available From</label><br />
+                    <input
+                        type="date"
+                        value="Available From"
+                        name="date-Available From"
+                        id="Available From"
+                    />
+                    <br /><br />
+                    <label for="Until">Until</label><br />
+                    <input
+                        type="date"
+                        value="Until"
+                        name="date-Until"
+                        id="Until"
+                    />
+                    <br /><br />
+                    <button
+                        onclick="window.location.href='assignments.html';"
+                        type="Cancel"
+                    >
+                        Cancel
+                    </button>
+                    <button
+                        onclick="window.location.href='assignments.html';"
+                        type="Save"
+                    >
+                        Save
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
