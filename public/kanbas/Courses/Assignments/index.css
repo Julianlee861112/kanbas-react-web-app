@@ -39,6 +39,7 @@ div.subnav-title{
     font-size:14;
     flex-grow: 1;
     align-items: center;
+    border-left: 3px solid green;
 }
 .content-title{
     display:block;
@@ -85,4 +86,12 @@ a.sidebar-wide{
     flex-grow: 1;
     height:60;
     align-items: center;
+}
+.assignments-field{
+    width:70%;
+    margin:auto;
+}
+.edit-end{
+    margin-top:20;
+    background-color: white;
 }

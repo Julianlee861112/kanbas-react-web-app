@@ -278,7 +278,7 @@ a{
     margin-left:20;
     margin-right:20;
     padding:5;
-    background-color: black;
+    background-color: gray;
     flex-grow: 1;
 }
 .sidebar-subnav-inactive{
@@ -294,4 +294,6 @@ i.sidebar-icon{
     font-size: 28px;
     color:red;
 }
-
+.inline{
+    display: inline;
+}
