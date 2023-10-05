@@ -5,25 +5,15 @@ a.link-breadcrumb{
 div.subnav-title{
     padding-left: 8;
 }
-.assignment-title{
-    font-size:14;
-}
-.assignment-detail{
-
-    font-size: 8;
+.content-title{
+    background-color: darkkhaki;
+    padding-top: 8;
+    padding-bottom: 8;
 }
 .course-content-container{
     display: flex;
     flex-direction: row;
     background-color: white;
-}
-.course-content{
-    padding-top:10px;
-    padding-left: 5px;
-    padding-right:5px;
-    padding-bottom: 5px;
-    width:100%;
-    
 }
 
 .course-content-{
@@ -36,17 +26,9 @@ div.subnav-title{
 }
 .course-content-title{
     display: flex;
-    font-size:14;
     flex-grow: 1;
+    /* height:48; */
     align-items: center;
-    border-left: 3px solid green;
-}
-.content-title{
-    display:block;
-    font-size:10;
-}
-.content-content{
-    flex-grow: 1;
 }
 
 
@@ -56,8 +38,9 @@ div.subnav-title{
     vertical-align: middle;
 }
 .content-item{
+    width:20;
     justify-content: left;
-    display:block;
+    display:flex;
     flex-grow: 1;
 }
 a.sidebar-wide{
@@ -65,22 +48,4 @@ a.sidebar-wide{
     margin:5 auto;
     display:block;
     font-size: 12;
-}
-.searchbar{
-    height:32;
-    display:flex;
-}.assignment-content{
-    background-color: white;
-    display: flex;
-    flex-grow: 1;
-    height:60;
-    align-items: center;
-}
-.assignments-field{
-    width:70%;
-    margin:auto;
-}
-.edit-end{
-    margin-top:20;
-    background-color: white;
 }

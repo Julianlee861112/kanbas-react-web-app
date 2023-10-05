@@ -10,27 +10,18 @@ div.subnav-title{
     padding-top: 8;
     padding-bottom: 8;
 }
-.course-content-container{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
+
 .course-content{
     padding-top:10px;
     padding-left: 5px;
     padding-right:5px;
     padding-bottom: 5px;
     width:100%;
-    background-color: orange;
 }
-
-.course-content-{
-    margin-left:20;
-    margin-right:20;
-    padding-left: 5px;
-    padding-bottom: 20;
+.course-content-container{
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    flex-grow: 1;
 }
 .course-content-title{
     display: flex;
@@ -38,19 +29,9 @@ div.subnav-title{
     /* height:48; */
     align-items: center;
 }
-.main-content-rightbar{
-    padding:24;
-    width: 300;
-    background-color: blue;
-}
-.to-do-container{
-    width: 200;
-    background-color: yellow;
-}
-.comming-up-container{
-    width:200;
-    background-color: grey;
-}
+
+
+
 .grip{
     width:20;
     text-align: center;

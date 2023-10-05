@@ -1,0 +1,9 @@
+div.dashboard-content{
+    padding-top:12px;
+
+    flex-grow: 1;
+    margin-left:48;
+}
+.dashboard-action-container{
+    padding-bottom: 10;
+}

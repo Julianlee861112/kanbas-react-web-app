@@ -10,51 +10,52 @@ table tr td.sidebar{
 
 div.application{
     display: flex;
-    height: 100%;
+    flex-grow: 1;
     width: 100%;
+    min-height:100%;
 }
 .content{
     padding-right: 24;
-    height:100%;
+    min-height:100%;
     width:100%;
-    /* background-color: aqua; */
     float:left
 }
 .sidebar{
     width: 84px;
     background-color: black;
-    height: 100%;
     display:block;
-    float:left
+    float:left;
+    padding-left: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .main-content{
     display: flex;
     flex-direction: row;
-    background-color: bisque;
 }
 .main-content-right{
-    background-color:green;
     flex-grow: 1;
+}.main-content-rightbar{
+    padding:24;
+    width: 300;
 }
 .subnav-container{
     width:195px;
     min-width:195;
     height:100%;
-    background-color: red;
     text-align: center;
     padding-left: 24px;
     padding-top: 24px;
 }
 .ic-menu-container{
     display:block;
-    width:48px;
-    height:36px;
     margin: auto;
-    padding-top: 5px;
     text-align: center;
 }
 .menu-text{
     text-align: center;
+    margin-top:5;
     font-size:14px;
 }
 .content-header{
@@ -100,10 +101,8 @@ div.application{
     padding-left: 5px;
     padding-right:5px;
     width:70%;
-    background-color: orange;
 }
 .profile-right{
-    background-color: yellow;
     flex-grow: 1;
 }
 .profile-header-icon{
@@ -147,35 +146,7 @@ div.application{
     padding-top:5px;
     padding-left: 5px;
     padding-right:5px;
-    background-color: orange;
     flex-grow: 1;
-}
-.dashboard-content{
-    padding-top:12px;
-    /* padding-left: 48px; */
-    padding-right:24px;
-    background-color: gold;
-    flex-grow: 1;
-}
-.dashboard-subtitle{
-    margin-left:48;
-}
-.dashboard-grid{
-    margin-left:30;
-}
-.dashboard-card-picture{
-    height: 260;
-    width: 260;
-    background-color: chocolate;
-}
-.dashboard-card-style{
-    margin-top: 18;
-    margin-left:18;
-    width: 262;
-
-}
-.dashboard-action-container{
-    padding-bottom: 10;
 }
 .course-header{
     margin-left: 20;
@@ -185,7 +156,7 @@ table{
     margin-right: 0;
 }
 .main-content{
-    height: 100%;
+    min-height: 90%;
 }
 td{
     vertical-align: top;
@@ -202,13 +173,9 @@ td{
 ul{
     padding-left: 0px;
 }
-.sidebar{
-    padding-left: 0;
-    margin-bottom: 0;
-}
+
 .ic-app-header-menu{
     width:84px;
-    height:66px;
     list-style-type: none;
     padding-left: 0;
     padding-top: 6px;
@@ -218,7 +185,6 @@ ul{
 }
 .ic-app-header-menu-active{
     width:84px;
-    height:66px;
     list-style-type: none;
     padding-left: 0;
     padding-top: 6px;
@@ -226,9 +192,10 @@ ul{
     color: red;
     vertical-align: middle;
     background-color: white;
+    text-align: center;
 }
 .sidebar-subnav{
-    padding-left: 8;
+    padding-left: 10;
     list-style-type: none;
 }
 .profile-content-box{
@@ -252,10 +219,12 @@ a{
 .sidebar-menu{
     color:white;
     text-decoration: none;
+    display:inline;
 }
 .sidebar-menu-active{
     color:red;
     text-decoration: none;
+    display:inline;
 }
 .no-deco-no-underline{
     text-decoration: none;
@@ -268,9 +237,9 @@ a{
 .sidebar-subnav-active{
     padding-top: 8;
     padding-bottom: 8;
-    margin-left: -8;
+    margin-left: -10;
     border-left: 2px solid black;
-    padding-left: 6px;
+    padding-left: 8px;
     color: black
 }
 .course-content-module{
@@ -278,8 +247,9 @@ a{
     margin-left:20;
     margin-right:20;
     padding:5;
-    background-color: gray;
+    background-color: white;
     flex-grow: 1;
+    
 }
 .sidebar-subnav-inactive{
     padding-top: 8;
@@ -296,4 +266,10 @@ i.sidebar-icon{
 }
 .inline{
     display: inline;
+}
+.comming-up-container{
+    width:200;
+}
+.to-do-container{
+    width: 200;
 }
