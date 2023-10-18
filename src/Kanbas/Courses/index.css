@@ -1,0 +1,31 @@
+.content-header{
+    height: 83px;
+    border-bottom: 1px solid black;
+    /* margin-left: 24px; */
+    padding-left: 24px;
+    display:flex;
+    flex-grow: 1;
+    padding-right:24;
+    align-items: center;
+}
+.profile-header-icon{
+    border-color:transparent;
+    display:inline-block;
+    color:red;
+    background-color: transparent;
+    font-size:24;
+}
+.content{
+    min-height:100%;
+    flex-grow: 1;
+    display: block;
+}
+a.link-breadcrumb{
+    color :red;
+    text-decoration: none;
+}
+.breadcrumb{
+    content: ">" !important;
+    padding: 0 5px;
+    color: red;
+}

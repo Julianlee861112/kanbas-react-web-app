@@ -1,0 +1,51 @@
+a.link-breadcrumb{
+    color :red;
+    text-decoration: none;
+}
+div.subnav-title{
+    padding-left: 8;
+}
+.content-title{
+    background-color: darkkhaki;
+    padding-top: 8;
+    padding-bottom: 8;
+}
+.course-content-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.course-content-{
+    margin-left:20;
+    margin-right:20;
+    padding-left: 5px;
+    padding-bottom: 20;
+    background-color: white;
+    flex-grow: 1;
+}
+.course-content-title{
+    display: flex;
+    flex-grow: 1;
+    /* height:48; */
+    align-items: center;
+}
+
+
+.grip{
+    width:20;
+    text-align: center;
+    vertical-align: middle;
+}
+.content-item{
+    width:20;
+    justify-content: left;
+    display:flex;
+    flex-grow: 1;
+}
+a.sidebar-wide{
+    text-align: left;
+    margin:5 auto;
+    display:block;
+    font-size: 12;
+}

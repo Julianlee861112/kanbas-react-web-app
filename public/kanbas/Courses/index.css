@@ -1,0 +1,11 @@
+div.course-content-container{
+    display: flex;
+    flex-direction: row;
+}
+.course-content{
+    padding-top:10px;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 5px;
+    width:100%;
+}

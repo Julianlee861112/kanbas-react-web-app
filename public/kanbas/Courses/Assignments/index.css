@@ -1,0 +1,86 @@
+a.link-breadcrumb{
+    color :red;
+    text-decoration: none;
+}
+div.subnav-title{
+    padding-left: 8;
+}
+.assignment-title{
+    font-size:14;
+}
+.assignment-detail{
+
+    font-size: 8;
+}
+.course-content-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.course-content{
+    padding-top:10px;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 5px;
+    width:100%;
+    
+}
+
+.course-content-{
+    margin-left:20;
+    margin-right:20;
+    padding-left: 5px;
+    padding-bottom: 20;
+    background-color: white;
+    flex-grow: 1;
+}
+.course-content-title{
+    display: flex;
+    font-size:14;
+    flex-grow: 1;
+    align-items: center;
+    border-left: 3px solid green;
+}
+.content-title{
+    display:block;
+    font-size:10;
+}
+.content-content{
+    flex-grow: 1;
+}
+
+
+.grip{
+    width:20;
+    text-align: center;
+    vertical-align: middle;
+}
+.content-item{
+    justify-content: left;
+    display:block;
+    flex-grow: 1;
+}
+a.sidebar-wide{
+    text-align: left;
+    margin:5 auto;
+    display:block;
+    font-size: 12;
+}
+.searchbar{
+    height:32;
+    display:flex;
+}.assignment-content{
+    background-color: white;
+    display: flex;
+    flex-grow: 1;
+    height:60;
+    align-items: center;
+}
+.assignments-field{
+    width:70%;
+    margin:auto;
+}
+.edit-end{
+    margin-top:20;
+    background-color: white;
+}
