@@ -7,31 +7,12 @@ import TodoList from "./todo/TodoList";
 function Assignment3() {
   return (
     <div>
-      <h2>Assignment 3</h2>
+      <h2>Lab 3</h2>
+      <TodoItem />
       <TodoList />
       <hr />
-      <ul className="list-group">
-        <TodoItem
-          todo={{
-            title: "Buy milk",
-            done: true,
-            status: "COMPLETE",
-          }}
-        />
-        <TodoItem
-          todo={{
-            title: "Pick up kids",
-            done: false,
-            status: "IN_PROGRESS",
-          }}
-        />
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-      </ul>
-      <TodoItem />
-      <PathParameters />
       <JavaScript />
+      <PathParameters />
     </div>
   );
 }

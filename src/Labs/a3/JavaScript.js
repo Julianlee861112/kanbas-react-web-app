@@ -17,32 +17,35 @@ import House from "./House";
 import Spread from "./Spread";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
-
+import Styles from "./Styles";
+import Classes from "./Classes";
 function JavaScript() {
   console.log("Hello World!");
 
   return (
     <div className="JavaScript">
       <h3>JavaScript</h3>
-      <FunctionDestructing />
-      <Destructing />
-      <Spread />
-      <House />
-      <TemplateLiterals />
-      <FindFunction />
-      <JsonStringify />
-      <MapFunction />
-      <AddingAndRemovingDataToFromArrays />
-      <WorkingWithArrays />
-      <FunctionParenthesisAndParameters />
-      <ImpliedReturn />
-      <ArrowFunctions />
-      <ES5Functions />
+      <VariablesAndConstants />
+      <VariableTypes />    
+      <BooleanVariables />
       <TernaryOperator />
       <IfElse />
-      <BooleanVariables />
-      <VariableTypes />
-      <VariablesAndConstants />
+      <ES5Functions />
+      <ArrowFunctions />
+      <ImpliedReturn />
+      <FunctionParenthesisAndParameters />
+      <WorkingWithArrays />
+      <AddingAndRemovingDataToFromArrays />
+      <MapFunction />
+      <JsonStringify />
+      <FindFunction />
+      <TemplateLiterals />
+      <House />
+      <Spread />
+      <Destructing />
+      <FunctionDestructing />
+      <Styles />
+      <Classes />
     </div>
   );
 }

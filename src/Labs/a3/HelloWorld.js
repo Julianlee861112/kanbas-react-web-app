@@ -1,5 +1,15 @@
+import Nav from "../../Nav";
 function HelloWorld() {
-  return <h1>Hello World</h1>;
+
+  return(
+    <div className="container">
+      <Nav />
+      <h1>Hello World</h1>
+
+    </div>
+
+
+  ) 
 }
 
 export default HelloWorld;
