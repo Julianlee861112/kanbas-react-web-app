@@ -12,11 +12,11 @@ import {FaBars} from "react-icons/fa6";
 import "./index.css";
 import CourseHeader from "./courseHeader";
 
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [empty, kanbas, coursesNotGoingToUse, id, screen] = pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div class = "content d-block pe-5">
       <CourseHeader/>
