@@ -49,8 +49,8 @@ function ModuleList() {
           />
 
 
-          <button className = "float-end btn btn-primary" onClick={() => dispatch(handleAddModule)}>Add</button>
-          <button className = "float-end btn btn-success" onClick={() => dispatch(handleUpdateModule)}>Update</button>
+          <button className = "float-end btn btn-primary" onClick={handleAddModule}>Add</button>
+          <button className = "float-end btn btn-success" onClick={handleUpdateModule}>Update</button>
           
         </li>
       
