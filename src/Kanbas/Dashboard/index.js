@@ -12,8 +12,8 @@ function Dashboard() {
 
   const addNewCourse = () => {
     setCourses([...courses,
-              { ...course,
-                _id: new Date().getTime() }]);
+              { _id: new Date().getTime(), ...course,
+                 }]);
   }
   const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
@@ -36,6 +36,8 @@ function Dashboard() {
       <h1>Dashboard</h1>
       <div className="row-5 ms-3 p-0" >
         <h5>Course</h5>
+        <input value={course._id} className="form-control" placeholder="ID"
+             onChange={(e) => setCourse({ ...course, _id: e.target.value }) } />
         <input value={course.name} className="form-control"
              onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
         <input value={course.number} className="form-control"

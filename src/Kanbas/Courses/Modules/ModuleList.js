@@ -1,17 +1,39 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { useSelector, useDispatch } from "react-redux";  
 import {
-  addModule, deleteModule,updateModule, setModule} from "./modulesReducer";
-
+  addModule, deleteModule,updateModule, setModule, setModules} from "./modulesReducer";
+import { createModule, findModulesForCourse } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
+  const handleDeleteModule = async(moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
-  
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
 
   return (
     <ul className="list-group">
@@ -27,8 +49,8 @@ function ModuleList() {
           />
 
 
-          <button className = "float-end btn btn-primary" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-          <button className = "float-end btn btn-success" onClick={() => dispatch(updateModule(module))}> Update</button>
+          <button className = "float-end btn btn-primary" onClick={() => dispatch(handleAddModule)}>Add</button>
+          <button className = "float-end btn btn-success" onClick={() => dispatch(handleUpdateModule)}>Update</button>
           
         </li>
       
@@ -38,9 +60,10 @@ function ModuleList() {
            <li key={index} className="list-group-item ">
               <h3>{module.name}</h3>
               <p>{module.description}</p>
+
               <button className = "float-end btn btn-success " onClick={() => dispatch(setModule(module))}>Edit</button>
               <button className="btn btn-danger float-end"
-              onClick={() => dispatch(deleteModule(module._id))}>
+              onClick={() => handleDeleteModule(module._id)}>
 
               Delete
               </button>

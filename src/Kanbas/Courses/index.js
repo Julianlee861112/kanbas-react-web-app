@@ -1,4 +1,5 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import JsonPre from "../../Labs/a3/JsonPre";
 import db from "../Database";
@@ -11,12 +12,25 @@ import Grades from "./Grades";
 import {FaBars} from "react-icons/fa6";
 import "./index.css";
 import CourseHeader from "./courseHeader";
+import axios from "axios";
 
-function Courses({courses}) {
+function Courses() {
+  const URL = "http://localhost:4000/api/courses"
+  const [course, setCourse] = useState({});
   const { courseId } = useParams();
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   const {pathname} = useLocation();
   const [empty, kanbas, coursesNotGoingToUse, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
   return (
     <div class = "content d-block pe-5">
       <CourseHeader/>
