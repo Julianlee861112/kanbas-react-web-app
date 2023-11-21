@@ -8,11 +8,12 @@ import { createModule, findModulesForCourse } from "./client";
 import * as client from "./client";
 
 function ModuleList() {
-  const handleDeleteModule = async(moduleId) => {
+  const handleDeleteModule = (moduleId) => {
     client.deleteModule(moduleId).then((status) => {
       dispatch(deleteModule(moduleId));
     });
   };
+
   const handleUpdateModule = async () => {
     const status = await client.updateModule(module);
     dispatch(updateModule(module));
