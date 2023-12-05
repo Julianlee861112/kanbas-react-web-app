@@ -5,7 +5,6 @@ import Account from "../users/account";
 import UserTable from "../users/table";
 import Signup from "../users/signup";
 import ProjectNav from "../ProjectNav";
-console.log("env", process.env);
 function Project() {
   return (
     <div className="row">
